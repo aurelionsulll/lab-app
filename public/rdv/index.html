@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>FormWizard_v1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+            <form action="" id="wizard">
+        		<!-- SECTION 1 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/coronavirus.jpg" alt="">
+						</div>
+						<div class="form-content" >
+							<div class="form-header">
+								<h3>Registration</h3>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									Nom
+									<input type="text" placeholder="Nom" name="last_name" class="form-control">
+								</div>
+								<div class="form-holder">
+									Prénom
+									<input type="text" placeholder="Prénom" name="first_name" class="form-control">
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-holder w-100">
+									Date de naissance
+									<input type="date"  name="date" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder w-100" style="align-self: flex-end; transform: translateY(4px);">
+									Sexe
+									<div class="checkbox-tick">
+										<label class="male">
+											<input type="radio" name="sexe" value="male">M<br>
+											<span class="checkmark"></span>
+										</label>
+										<label class="female">
+											<input type="radio" name="sexe" value="female">F<br>
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </section>
+
+				<!-- SECTION 2 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/coronavirus.jpg" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Registration</h3>
+							</div>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									Adresse
+									<input type="text" name="mail" name="Adresse" placeholder="Adresse" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									Numéro téléphone
+									<input type="text" name="tel" placeholder="Numéro téléphone" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									Email
+									<input type="text" name="mail" placeholder="Email" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+                </section>
+
+                <!-- SECTION 3 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/coronavirus.jpg" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Registration</h3>
+							</div>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									CIN/Passport
+									<input type="text" name="cin" placeholder="CIN/Passport" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									Date de prélèvement
+									<input type="date" name="mail" name="date_test" placeholder="Date de prélèvement" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+            </form>
+		</div>
+
+		<!-- JQUERY -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+		<script src="js/main.js"></script>
+		<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
