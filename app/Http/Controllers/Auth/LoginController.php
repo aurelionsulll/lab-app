@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -19,17 +20,6 @@ class LoginController extends Controller
 
     protected function authenticated($request, $user)
     {
-        // if($user->is_admin == 1) {
-        //     return redirect()->intended('/cp_admin');
-        // }
-
-        // if($user->is_admin == 2) {
-        //     return redirect()->intended('/appointmentview');
-        // }
-        // if($user->is_admin == 0) {
-        //     return redirect()->intended('/indexAddUserToCompany');
-        // }
-
        switch(Auth::user()->is_admin){
            case 0:
                return redirect()->intended('indexAddUserToCompany');
@@ -61,5 +51,16 @@ class LoginController extends Controller
 //        $this->middleware('guest')->except('logout');
     }
 
+    // public function logout(Request $request)
+    // {
+    //     $this->guard()->logout();
+
+    //     return redirect('/about');
+    // }
+
+    public function logout(Request $request) {
+        Auth::logout();
+        return redirect('/');
+      }
 
 }

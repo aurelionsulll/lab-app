@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Hash;
 
 class covidtestController extends Controller
 {
+
     public function __construct()
     {
         $this->middleware('admin')->except('indexUser');
