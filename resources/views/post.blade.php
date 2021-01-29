@@ -8,7 +8,9 @@
             font-size: 15px;
             color: #061a2b;
         }
-       
+        /* hr{
+            border-top :#32618a 1px solid !important;
+        } */
         .embedded_image p{
             color: #133857;
             text-align: center;

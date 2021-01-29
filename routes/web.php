@@ -142,11 +142,11 @@ Route::get('/latestrdv','covidtestController@latestrdv');
 
 // ======================= Blog client managment ======================= //
 Route::get('/blogPost','BlogController@index');
-Route::get('post/{slug}','BlogController@show');
+Route::get('/{slug}','BlogController@show');
 
 Route::get('/date','TestreservationController@date');
 
 //Auth
 Auth::routes();
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::get('admin/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index')->name('home');

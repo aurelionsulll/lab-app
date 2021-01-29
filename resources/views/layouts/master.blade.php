@@ -76,7 +76,7 @@
                                 <script>
                                     var i = 1;
                                 </script>
-                                <a class="dropdown-item" href="{{ route('logout') }}"><i class="ti-arrow-circle-up m-r-5 m-l-5"></i>Se déconnecter</a>
+                                <a class="dropdown-item" href="admin/logout"><i class="ti-arrow-circle-up m-r-5 m-l-5"></i>Se déconnecter</a>
                             </div>
                         </li>
                     </ul>
