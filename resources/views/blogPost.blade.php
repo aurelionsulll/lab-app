@@ -11,7 +11,7 @@
                 <div class="post-thumb-inner">
                   <div class="thumb"> 
                       @if ($post->featured_image)
-                      <img src="{{ $post->featured_image }}" alt="Image" style="border-radius: 15px 15px 0px 0px;">
+                      <img src="{{ $post->featured_image }}" alt="Image" style="border-radius: 15px 15px 0px 0px;" class="img-responsive" width = "100%">
                       @endif
                 </div>
                 </div>
