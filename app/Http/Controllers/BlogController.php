@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Wink\WinkPost;
 
 class BlogController extends Controller
 {
@@ -13,8 +14,21 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        $posts = WinkPost::with('tags')
+        ->live()
+        ->orderBy('publish_date','DESC')
+        ->simplePaginate(12);
+        
+        return view('blogPost')->with('posts',$posts);
     }
+
+    // public function indexPost
+    // {
+    //     $posts = WinkPost::('tags')
+    //     ->live()
+    //     ->orderBy('publish_date','DESC')
+    //     ->simplePaginate(12);
+    // }
 
     /**
      * Show the form for creating a new resource.
@@ -43,9 +57,10 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        //
+        $post = WinkPost::where('slug',$slug)->first();
+        return view('post')->with('post',$post);
     }
 
     /**

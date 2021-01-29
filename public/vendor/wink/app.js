@@ -49338,7 +49338,7 @@ var render = function() {
                 _c(
                   "label",
                   { staticClass: "input-label", attrs: { for: "author_id" } },
-                  [_vm._v("Auteur")]
+                  [_vm._v("Auteurr")]
                 ),
                 _vm._v(" "),
                 _c(
@@ -49383,6 +49383,46 @@ var render = function() {
                 ),
                 _vm._v(" "),
                 _c("form-errors", { attrs: { errors: _vm.errors.author_id } })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "input-group" },
+              [
+                _c(
+                  "label",
+                  { staticClass: "input-label", attrs: { for: "excerpt" } },
+                  [_vm._v("Extrait")]
+                ),
+                _vm._v(" "),
+                _c("textarea", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.excerpt,
+                      expression: "form.excerpt"
+                    }
+                  ],
+                  staticClass: "input",
+                  attrs: {
+                    placeholder: "De quoi parle l'article?",
+                    id: "excerpt"
+                  },
+                  domProps: { value: _vm.form.excerpt },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "excerpt", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("form-errors", { attrs: { errors: _vm.errors.excerpt } })
               ],
               1
             ),
@@ -49578,7 +49618,7 @@ var render = function() {
                   staticClass: "py-1 px-2 btn-primary text-sm",
                   attrs: { to: { name: "post-new" } }
                 },
-                [_vm._v("\n                Nouveau article\n            ")]
+                [_vm._v("\n                Nouvel article\n            ")]
               )
             ],
             1

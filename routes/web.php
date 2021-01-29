@@ -141,6 +141,8 @@ Route::post('/updateStautsApp/{id}','covidtestController@updateStautsApp');
 Route::get('/latestrdv','covidtestController@latestrdv');
 
 // ======================= Blog client managment ======================= //
+Route::get('/blogPost','BlogController@index');
+Route::get('/{slug}','BlogController@show');
 
 
 

@@ -162,6 +162,7 @@
                             <li class="{{ (request()->is('/')) ? 'active' : '' }}"><a style="{{ (request()->is('/')) ? '' : 'color: #2c3e50' }} " href="{{url('/')}}">Accueil</a></li>
                             <li class="{{ (request()->is('about')) ? 'active' : '' }}"><a style="{{ (request()->is('about')) ? '' : 'color: #2c3e50' }} " href="{{url('/about')}}">Qui sommes-nous</a></li>
                             <li class="{{ (request()->is('info')) ? 'active' : '' }}"><a style="{{ (request()->is('info')) ? '' : 'color: #2c3e50' }} " href="{{url('/info')}}">Info utile</a></li>
+                            <li class="{{ (request()->is('blogPost')) ? 'active' : '' }}"><a style="{{ (request()->is('blogPost')) ? '' : 'color: #2c3e50' }} " href="{{url('/blogPost')}}">Actualités</a></li>
                             <li class="{{ (request()->is('contact')) ? 'active' : '' }}"><a style="{{ (request()->is('contact')) ? '' : 'color: #2c3e50' }} " href="{{url('/contact')}}">Contactez-nous</a></li>
                             <li><a href="/loginform" type="button" class="btn btn-primary " style="color: #fff ;background-color:#3ec5cc ; border:0;border-radius: 16px; margin-left:15px; font-weight :600">Préparation test</a></li>
                         </ul>
@@ -177,12 +178,12 @@
             <div class="row " >
                 <div class="col-md-3 mx-auto">
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: #ffffff!important;">Nous sommes ouverts du</h5>
-                    <p>7j/7 Lundi au Dimanche 08h30 - 18h00</p>
+                    <span>7j/7 Lundi au Dimanche 08h30 - 18h00</span>
                 </div>
                 <hr class="col-md-3 clearfix w-100 d-md-none">
                 <div class="col-md-3 mx-auto">
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: #ffffff!important;">Adresse</h5>
-                    <p>N°31 Lot zohour 1, 1 er étage app N° 2 AinItti, Marrakech</p>
+                    <span>N°31 Lot zohour 1, 1 er étage app N° 2 AinItti, Marrakech</span>
                 </div>
                 <hr class="col-md-3 clearfix w-100 d-md-none">
                 <div class="col-md-3 mx-auto">
@@ -205,7 +206,7 @@
                 <a class="btn-floating btn-tw mx-1 icon-wtsp" href="https://api.whatsapp.com/send?phone=+212613199027" target="_blank"><i class="fab fa-whatsapp" style="color: #25D366 ; font-size:23px"> </i></a>
             </li>
             <li class="list-inline-item">
-                <a class="btn-floating btn-tw mx-1 icon-fb" href="https://www.facebook.com/Laboratoireainitti/" target="_blank"><i class="fab fa-facebook" style="color: #fff ; font-size:23px"> </i></a>
+                <a class="btn-floating btn-tw mx-1 icon-fb" href="https://www.facebook.com/Laboratoireainitti/" target="_blank"><i class="fab fa-facebook" style="color: #4267B2 ; font-size:23px"> </i></a>
             </li>
             <li class="list-inline-item">
                 <a class="btn-floating btn-tw mx-1 icon-insta" href="https://www.instagram.com/laboratoire.ainitti/" target="_blank"><i class="fab fa-instagram" style="color: #5B51D8 ; font-size:23px"> </i></a>
